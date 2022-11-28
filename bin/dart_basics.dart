@@ -8,5 +8,5 @@ void main(List<String> arguments) {
 
   // Задание 2. Перевод из десятичной в двоичную
   var binary = BinaryCalc();
-  binary.res(312, [1, 0, 1]);
+  binary.res(312, [1, 0, 1, 1, 1, 0]);
 }

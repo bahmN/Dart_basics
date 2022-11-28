@@ -4,14 +4,9 @@ class BinaryCalc {
     print(
         '\nЗадание 2. Преобразования целых чисел из десятичной системы в двоичную и обратно:');
     print('Число $a в двоичной системе счислений = ${calcBinary(a)}');
-    var resb = '';
-
-    for (var element in b) {
-      resb = resb + element.toString();
-    }
 
     print(
-        'Число $resb в двоичной системе счисления = числу ${calcDecimal(b)} в десятеричной системе счисления');
+        'Число ${b.join()} в двоичной системе счисления = числу ${calcDecimal(b)} в десятеричной системе счисления');
   }
 
   String calcBinary(int a) {
