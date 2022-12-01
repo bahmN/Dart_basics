@@ -1,5 +1,6 @@
 import 'binary_calculator_q2.dart';
 import 'collection_numbers_q3.dart';
+import 'detect_number_q5.dart';
 import 'nod_and_nok_q1.dart';
 import 'return_map_q4.dart';
 
@@ -29,4 +30,7 @@ void main(List<String> arguments) {
     'Cat',
     'Cat',
   ]);
+
+  var detNumb = DetectNumber();
+  detNumb.res(['zErO', 'Hello', 'world', 'One', 'two']);
 }
