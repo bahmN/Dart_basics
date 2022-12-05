@@ -32,9 +32,11 @@ void main(List<String> arguments) {
     'Cat',
   ]);
 
+  // Задание 5. Метод, возвращающий цифры без повторений, которые встречаются в данной строке.
   var detNumb = DetectNumber();
   detNumb.res(['zErO', 'Hello', 'world', 'One', 'two']);
 
+  // Задание 7. Реализовать метод, который вычисляет корень любой заданной степени из числа.
   var rootNumb = RootNumber();
   rootNumb.res(num: 121, rootDegree: 11);
 }
