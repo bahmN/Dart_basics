@@ -4,9 +4,9 @@ class CollectionNumbers {
 
   void res(String s) {
     print(
-        '\nЗадание 3. Метод, который принимает строку слов, разделённых пробелами. Задача — найти в данной строке числа и вернуть коллекцию num этих чисел.');
+        '\nЗадание 3. Реализовать метод, который принимает строку слов, разделённых пробелами. Задача — найти в данной строке числа и вернуть коллекцию num этих чисел.');
     print('Заданная строка: $s');
-    s.runes.forEach((int rune) {
+    for (var rune in s.runes) {
       //Посимвольная разбивка строки
       var char = String.fromCharCode(rune); //Преобразуем руну в символ
       var res = int.tryParse(
@@ -14,7 +14,7 @@ class CollectionNumbers {
       if (res != null) {
         num.add(res); //Если res не null, то добавляем в коллекцию num
       }
-    });
+    }
     print('Результат $num');
   }
 }

@@ -3,6 +3,7 @@ import 'collection_numbers_q3.dart';
 import 'detect_number_q5.dart';
 import 'nod_and_nok_q1.dart';
 import 'return_map_q4.dart';
+import 'root_number_q7.dart';
 
 void main(List<String> arguments) {
   // Задание 1. НОД и НОК
@@ -33,4 +34,7 @@ void main(List<String> arguments) {
 
   var detNumb = DetectNumber();
   detNumb.res(['zErO', 'Hello', 'world', 'One', 'two']);
+
+  var rootNumb = RootNumber();
+  rootNumb.res(num: 121, rootDegree: 11);
 }
