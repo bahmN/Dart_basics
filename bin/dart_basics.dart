@@ -52,12 +52,11 @@ void main(List<String> arguments) {
   //Задание 8. Работа с классами и mixin.
   print('\nЗадание 8. Работа с классами и mixin.');
   final user = AdminUser('iwanaev23@gmail.com');
-  print(user.getMailSystem);
+  print('Домен: ${user.getMailSystem}'); //Работа миксина
 
-  // var userManager = UserManager();
-  // userManager.listEmails(); //Выводим лист
-  // userManager.addEmail(); // Добавляем email в лист
-  // userManager.listEmails(); //Выводим лист после добавления email
-  // userManager.deleteEmail(1); //Удаляем почту
-  // userManager.listEmails(); //Выводим лист после удаления итема
+  final userManager = UserManager();
+  userManager.listEmails(); //Смотрим что мы имеем в листе
+  userManager.addEmail(); //Добавляем почты в лист
+  userManager.listEmails(); //Снова смотрим что получилось
+  userManager.deleteEmail(2); //Удаляем почту по индексу в листе
 }

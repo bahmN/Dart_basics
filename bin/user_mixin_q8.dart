@@ -1,14 +1,3 @@
-void main() {
-  final user = AdminUser('iwanaev23@gmail.com');
-  print('Домен: ${user.getMailSystem}'); //Работа миксина
-
-  final userManager = UserManager();
-  userManager.listEmails(); //Смотрим что мы имеем в листе
-  userManager.addEmail(); //Добавляем почты в лист
-  userManager.listEmails(); //Снова смотрим что получилось
-  userManager.deleteEmail(2); //Удаляем почту по индексу в листе
-}
-
 abstract class User {
   final String email;
 
