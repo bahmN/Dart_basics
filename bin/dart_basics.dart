@@ -51,14 +51,13 @@ void main(List<String> arguments) {
 
   //Задание 8. Работа с классами и mixin.
   print('\nЗадание 8. Работа с классами и mixin.');
-  var user = AdminUser(['iwanaev23@gmail.com', 'help@skillbox.ru']);
-  user.email.add('t.me@telegram.com');
-  user.getMailSystem(); //Выводим почты админов
+  final user = AdminUser('iwanaev23@gmail.com');
+  print(user.getMailSystem);
 
-  var userManager = UserManager();
-  userManager.listEmails(); //Выводим лист
-  userManager.addEmail(); // Добавляем email в лист
-  userManager.listEmails(); //Выводим лист после добавления email
-  userManager.deleteEmail(1); //Удаляем почту
-  userManager.listEmails(); //Выводим лист после удаления итема
+  // var userManager = UserManager();
+  // userManager.listEmails(); //Выводим лист
+  // userManager.addEmail(); // Добавляем email в лист
+  // userManager.listEmails(); //Выводим лист после добавления email
+  // userManager.deleteEmail(1); //Удаляем почту
+  // userManager.listEmails(); //Выводим лист после удаления итема
 }
