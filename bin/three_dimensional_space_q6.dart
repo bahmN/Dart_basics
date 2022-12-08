@@ -11,6 +11,7 @@ class Point3D {
       app = Point3D._fromName(x, y, z);
       print("Координаты точки в трехмерной плоскости: x = $x, y = $y, z = $z");
     } else {
+      app = Point3D._fromName(x, y, z);
       print("Добавлены новые координаты: x = $x, y = $y, z = $z");
     }
     return app;

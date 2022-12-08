@@ -7,6 +7,7 @@ import 'nod_and_nok_q1.dart';
 import 'return_map_q4.dart';
 import 'root_number_q7.dart';
 import 'three_dimensional_space_q6.dart';
+import 'user_mixin_q8.dart';
 
 void main(List<String> arguments) {
   //Задание 1. НОД и НОК
@@ -47,4 +48,17 @@ void main(List<String> arguments) {
   //Задание 7. Реализовать метод, который вычисляет корень любой заданной степени из числа.
   var rootNumb = RootNumber();
   rootNumb.res(num: 16, rootDegree: 2);
+
+  //Задание 8. Работа с классами и mixin.
+  print('\nЗадание 8. Работа с классами и mixin.');
+  var user = AdminUser(['iwanaev23@gmail.com', 'help@skillbox.ru']);
+  user.email.add('t.me@telegram.com');
+  user.getMailSystem(); //Выводим почты админов
+
+  var userManager = UserManager();
+  userManager.listEmails(); //Выводим лист
+  userManager.addEmail(); // Добавляем email в лист
+  userManager.listEmails(); //Выводим лист после добавления email
+  userManager.deleteEmail(1); //Удаляем почту
+  userManager.listEmails(); //Выводим лист после удаления итема
 }
